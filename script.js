@@ -1,9 +1,19 @@
-public class PinkTextExample {
-    // ANSI escape code untuk warna pink (light magenta)
-    public static final String ANSI_PINK = "\u001B[95m";
-    public static final String ANSI_RESET = "\u001B[0m";
+window.addEventListener('load', function () {
+    alert("Selamat datang di website Michelle Munayang!");
+});
 
-    public static void main(String[] args) {
-        System.out.println(ANSI_PINK + "Hello, ini teks warna pink di terminal!" + ANSI_RESET);
-    }
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        console.log(`Navigasi ke: ${link.textContent}`);
+    });
+});
+
+const yearSpan = document.createElement('span');
+yearSpan.textContent = new Date().getFullYear();
+
+const footer = document.querySelector('footer p');
+if (footer) {
+    footer.innerHTML = `&copy; ${yearSpan.textContent} Michelle Munayang`;
 }
