@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-    alert("Selamat datang di website Michelle Munayang!");
+    alert("Selamat datang di website saya");
 });
 
 const navLinks = document.querySelectorAll('nav ul li a');
@@ -15,5 +15,5 @@ yearSpan.textContent = new Date().getFullYear();
 
 const footer = document.querySelector('footer p');
 if (footer) {
-    footer.innerHTML = `&copy; ${yearSpan.textContent} Michelle Munayang`;
+    footer.innerHTML = `&copy; ${yearSpan.textContent} saya`;
 }
